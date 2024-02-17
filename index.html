@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download news templates from here</title>
+    <style>
+        h2 {
+            color: red;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            background-color: green;
+            border: 3px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button:hover {
+            background-color: red;
+            border: 5px solid gold;
+            color: blue;
+        }
+
+        .center {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h2>DOWNLOAD NEWS TEMPLATES FROM HERE</h2>
+        <button id="download-btn">DOWNLOAD</button>
+    </div>
+    <script>
+        let body = document.getElementsByTagName('body')[0];
+        let downloadBtn = document.getElementById('download-btn');
+
+        downloadBtn.addEventListener('mouseover', function() {
+            body.style.backgroundColor = 'black';
+        });
+        downloadBtn.addEventListener('mouseout', function() {
+            body.style.backgroundColor = 'white';
+            
+        });
+        downloadBtn.addEventListener('click', function() {
+            location.href = "https://drive.usercontent.google.com/download?id=1Lt3kAuu_HQtpVfI__iU2OcHyHAuCheDK&export=download&authuser=1&confirm=t&uuid=8bf5a2ed-20c5-4368-98b6-2c08134a811b&at=APZUnTW4K0i28mkxVaLC9hUX_uGl:1708190257822";
+        });
+    </script>
+</body>
+</html>
